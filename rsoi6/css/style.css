@@ -1,0 +1,27 @@
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 150px;
+}
+
+.block1, .block3, .block5{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: 2px -6px 14px rgba(211, 136, 198, 1);
+    font-size: 13px;
+}
+
+.block2, .block4, .block6{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 1px -7px 3px rgba(255, 255, 0, 1);
+}
+
+.button-block {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#newId {
+    color: blue;
+    text-shadow: 2px -6px 14px rgb(15, 9, 19);
+}

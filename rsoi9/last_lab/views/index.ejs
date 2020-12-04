@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>MongoDB web client</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="control-panel">
+            <form action="/cities" method="POST">
+                <table>
+                    <tr>
+                        <td>City name</td>
+                        <td><input type="text" value="Minsk" name="name" id="name-input"></td>
+                    </tr>
+                    <tr>
+                        <td>Year of foundation</td>
+                        <td><input type="number" name="year" id="year-input"></td>
+                    </tr>
+                    <tr>
+                        <td>Population</td>
+                        <td><input type="number" name="population" id="population-input"></td>
+                    </tr>
+                    <tr>
+                        <td>Is it a capital?</td>
+                        <td><input type="checkbox" name="capital" id="capital-input"></td>
+                    </tr>
+                </table>
+
+                <ul>
+                    <li><button type="submit" id="create">Create</button></li>
+                    <li><button type="button" id="read">Read</button></li>
+                    <li><button type="button" id="delete">Delete</button></li>
+                    <li><button type="button" id="update">Update</button></li>
+                </ul>
+            </form>
+        </div>
+    </div>
+    <table id="cities">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Year of foundation</th>
+            <th>Population</th>
+            <th>Capital</th>
+        </tr>
+        <% for(var i = 0; i < results.length; i++) {%>
+            <tr>
+                <td>
+                    <%=i+1%>
+                </td>
+                <td>
+                    <%=results[i].name%>
+                </td>
+                <td>
+                    <%=results[i].year%>
+                </td>
+                <td>
+                    <%=results[i].population%>
+                </td>
+                <td>
+                    <%=results[i].capital%>
+                </td>
+            </tr>
+            <% } %>
+    </table>
+
+</body>
+<script src="/js/main.js"></script>
+
+</html>

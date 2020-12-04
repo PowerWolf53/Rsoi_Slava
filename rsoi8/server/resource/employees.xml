@@ -1,0 +1,41 @@
+
+
+<employee>
+	<about>dasdas</about>
+	<position>QA engineer</position>
+	<email>vladlevsha@mail.ru</email>
+	<married>on</married>
+	<owncar>on</owncar>
+</employee>
+
+<employee>
+	<about>dasdas</about>
+	<position>QA engineer</position>
+	<email>vladlevsha@mail.ru</email>
+	<married>on</married>
+	<owncar>on</owncar>
+</employee>
+
+<employee>
+	<about>dasdas</about>
+	<position>QA engineer</position>
+	<email>vladlevsha@mail.ru</email>
+	<married>on</married>
+	<owncar>on</owncar>
+</employee>
+
+<employee>
+	<about>dasdas</about>
+	<position>QA engineer</position>
+	<email>vladlevsha@mail.ru</email>
+	<married>on</married>
+	<owncar>on</owncar>
+</employee>
+
+<employee>
+	<about></about>
+	<position></position>
+	<email></email>
+	<married>on</married>
+	<owncar>on</owncar>
+</employee>

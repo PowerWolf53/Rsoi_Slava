@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <header>Universities of Belarus</header>
+
+    <form>
+        <table>
+            <tr>
+                <td><label for="year-input">Year of birth</label></td>
+                <td><input type="text" name="year-input" id="year-input"></td>
+            </tr>
+            <tr>
+                <td><label for="name-input">Name</label></td>
+                <td><input type="text" name="name-input" id="name-input"></td>
+            </tr>
+            <tr>
+                <td><label for="fullname">Full name</label></td>
+                <td><input type="text" name="fullname-input" id="fullname-input"> </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label><input type="radio" id="small-size-radio" name="result-size" value="10px" checked="checked">Small</label>
+                    <label><input type="radio" id="medium-size-radio" name="result-size" value="20px">Medium</label>
+                    <label><input type="radio" id="large-size-radio" name="result-size" value="30px">Large</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><button id="load-button" type="button">Load XML data</button></td>
+            </tr>
+            <tr>
+                <td colspan="2"> <button id="script-button" type="button">Execute local script</button></td>
+            </tr>
+            <tr>
+                <td colspan="2"> <button id="show-year-button" type="button">Show something</button></td>
+            </tr>
+
+        </table>
+    </form>
+    <div id="placeForModal"></div>
+    <div id="errorModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Error occured! Please, choose option:</p>
+            <ul>
+                <li><button type="button" onclick="location.reload();">Reload page</button></li>
+                <li><button type="button" onclick="window.location.replace('error-page.html')">Redirect to ErrorPage</button></li>
+            </ul>
+        </div>
+    </div>
+    <footer></footer>
+</body>
+<script src="../js/jquery.js"></script>
+<script src="../js/main.js"></script>
+
+</html>

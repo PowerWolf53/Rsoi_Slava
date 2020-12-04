@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8" />
+  <title>Lab 3</title>
+  <link rel="stylesheet" type="text/css" href="../css/main.css" />
+</head>
+<body>
+  <header><h1>Опрос</h1></header>
+  <div id="container">
+    <article>
+      <fieldset class="regfield">
+        <legend>Введите информацию о себе</legend>
+        <form name="forms">
+          <label for="name">Имя:</label><br />
+          <input
+            class="text"
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Ivan"
+            maxlength="15"
+            required
+          /><br />
+          <label for="mail">E-mail:</label><br />
+          <input
+            class="text"
+            type="email"
+            id="mail"
+            name="mail"
+            placeholder="example@ex.com"
+            maxlength="50"
+            required
+          /><br />
+
+          <label for="week">Неделя:</label><br />
+          <input
+            class="text"
+            type="week"
+            id="week"
+            name="week"
+            min="2018-W1"
+            max="2018-W52"
+            required
+          /><br />
+
+          <p>Укажите свой возраст:</p>  
+          <input type="radio" id="years18" name="years" value="18-30" checked />
+          <label for="years18">18-29</label><br />
+
+          <input type="radio" id="years30" name="years" value="30-45" />
+          <label for="years30">30-45</label><br />
+
+          <input type="radio" id="years45+" name="years" value="45+" />
+          <label for="years45+">45+</label><br />
+
+          <label for="visits">Какой фирмы телефон Вы приобрели:</label><br />
+          <select class="text" id="phone" name="phone">
+            <option>Nokia</option>
+            <option>Huawei</option>
+            <option>Sony</option>
+            <option>Samsung</option>
+            <option>Xiaomi</option> </select
+          ><br />
+
+          <label for="feedback">Введите Ваш отзыв о приобретенном мобильном телефоне:</label><br />
+          <textarea
+            class="text"
+            id="feedback"
+            name="feedback"
+            placeholder="Введите отзыв"
+            maxlength="350"
+          ></textarea
+          ><br />
+
+          <input type="checkbox" name="updates" id="updates" />
+          <label for="updates">Прислать мне результаты опроса</label><br />
+
+          <input
+            class="btn"
+            type="submit"
+            value="Запись"
+            onclick="pushh(this.form)"
+            />
+          <input class="btn" type="reset" value="Удалить" name="res" />
+        </form>
+      </fieldset>
+    </article>
+
+       <nav>
+      <a href="">Телефон №1</a>
+      <a href="">Телефон №2</a>
+      <a href="">Телефон №3</a>
+    </nav>
+
+    <aside>
+      <br /><br />
+      <p>Спасибо за ваш ответ!</p>
+    </aside>
+  </div>
+  <footer>
+    <ul>
+      <li>+375(44) 753 84 70</li>
+      <li>serophima15@gmail.com</li>
+    </ul>
+  </footer>
+  <script type="text/javascript" src="../js/registration.js"></script>
+</body>

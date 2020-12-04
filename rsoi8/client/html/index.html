@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="../css/style.css">
+
+<head>
+    <title>My Form</title>
+</head>
+
+<body>
+    <header>Empoyee survey</header>
+    <form action="post" id="main-form">
+        <table>
+            <tr>
+                <td>About you</td>
+                <td><textarea cols="30" rows="10" id="about"></textarea></td>
+            </tr>
+            <tr>
+                <td>Position</td>
+                <td>
+                    <input list="positions" id="position">
+                    <datalist id="positions">
+                        <option value="Developer">
+                        <option value="Project Manager">
+                        <option value="QA engineer">
+                        <option value="Customer support specialist">
+                        <option value="Sales">
+                    </datalist>
+                </td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="email" id="email"></td>
+            </tr>
+            <tr>
+                <td>Married?</td>
+                <td><input type="checkbox" id="married"></td>
+            </tr>
+            <tr>
+                <td>Own car?</td>
+                <td><input type="checkbox" id="ownCar"></td>
+            </tr>
+            <tr>
+                <td><button type="button" id="submit-button">Submit form</button></td>
+                <td><button type="button" id="get-data-button">Get server files data</button></td>
+            </tr>
+        </table>
+    </form>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Results</p>
+            <table>
+                <tr>
+                    <td><textarea id="txtfiledata" cols="80" rows="30"></textarea></td>
+                    <td><textarea id="xmlfiledata" cols="80" rows="30"></textarea></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <footer></footer>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

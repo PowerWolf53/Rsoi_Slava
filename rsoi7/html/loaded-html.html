@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+</head>
+
+<body>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Белорусский государственный университет информатики и радиоэлектроники (до 1993 года — Минский радиотехнический институт, МРТИ) — ведущее высшее учебное заведение Республики Беларусь в области информационных технологий, радиотехники, электроники
+                и телекоммуникаций, расположенное в Минске.</p>
+        </div>
+    </div>
+    <script>
+        var modal = document.getElementById("myModal");
+        var span = document.getElementsByClassName("close")[0];
+        modal.style.display = "block";
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+    </script>
+</body>
+
+</html>
